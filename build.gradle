@@ -1,15 +1,17 @@
 plugins {
+    id 'application'
+    id 'checkstyle'
     id 'jacoco'
     id 'java'
-    id 'application'
 }
 
-mainClassName = 'Postipalvelu.App'
+
+mainClassName = 'postipalvelu.App'
 
 repositories {
     jcenter()
 }
 
-dependencies {
-    testCompile 'junit:junit:4.12'
+run {
+    standardInput = System.in
 }
