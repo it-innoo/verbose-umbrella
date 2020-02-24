@@ -1,0 +1,15 @@
+plugins {
+    id 'jacoco'
+    id 'java'
+    id 'application'
+}
+
+mainClassName = 'Postipalvelu.App'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
